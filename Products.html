@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce-website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>*{
+    margin:0px;
+    padding:0px;
+     
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.navbar{
+    background-color:dodgerblue;
+    display:flex;
+    width:1150px;
+    height:70px;   object-fit: cover;
+   image-rendering: auto;
+    flex-wrap:wrap;
+    color:aliceblue;
+}
+@media(max-width:480px){
+  /* max-width:60%; */
+}
+#navbar:active{
+  background-color:white ;
+  color:dodgerblue;
+}
+#navbar{
+  padding:2px;
+  margin-left:6px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+#navbar:hover{
+  color:dodgerblue;
+  background-color: aliceblue;
+}
+#nav-home{
+    margin-left: 310px;
+    display: flex;
+     font-size: 28px;
+    top:10px;
+    text-align-last:-1px;
+    /* justify-content: center; */
+    padding:20px;
+}
+#nav-home:hover{
+background-color:aliceblue;
+color:dodgerblue;
+}
+#nav-home:active{
+  background-color: aliceblue;
+  color: dodgerblue;
+}
+
+#nav-about{
+     display: flex;
+     font-size: 28px;
+    top:10px;
+    text-align-last:-1px;
+    /* justify-content: center; */
+    padding:20px;
+}
+#nav-about:hover{
+  background-color: aliceblue;
+  color:dodgerblue;
+}
+
+#nav-contect{
+     display: flex;
+     font-size: 28px;
+    top:10px;
+    text-align-last:-1px;
+    /* justify-content: center; */
+    padding:20px;
+}
+#nav-contect:hover{
+  background-color:aliceblue;
+  color:dodgerblue;
+}
+.nav-icons{
+   
+    margin-left:89%;
+    padding:16px;
+    display: flex;
+    margin-top:-6%;
+      font-size: 33px;
+      color:white;
+      gap:2px;
+    }
+    .nav-icons:hover{
+color:dodgerblue;
+background-color:aliceblue;
+    }
+#pre-icon{
+  left:2%;
+}
+#navicon{
+     display: flex
+;margin-left: 107%;
+    font-size: 52px;
+    /* top: 2px; */
+    margin-top: -40px;
+}
+.search{
+    width:17%;
+    height:35%;
+    padding:0.2%;
+    gap:5%;
+    margin-left:9%;
+    margin-top:1%;
+        border-radius:5%;
+
+}
+#icon1{
+     font-size:25px;
+     color:black;
+    width:1%;
+    height:42%; 
+    background-color: white;
+    margin-top:1%;
+
+}
+/* menu bar */
+nav {
+  background-color:white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:2px solid dodgerblue;
+}
+
+nav .logo {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style:outside;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 10px;
+  display: block;
+}
+
+/* HOVER MENU */
+nav ul li:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 40px;
+}
+
+/* MEGA MENU BOX */
+.mega-menu {
+  position: absolute;
+  margin-left: -655%;
+  top: 90px;
+  width: 800px;
+  background: #fff;
+  padding: 30px;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+ 
+/* MENU COLUMNS */
+  .mega-menu .column {
+  width: 25%;
+}  
+
+.mega-menu .column h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: dodgerblue;
+}
+
+.mega-menu .column a {
+  display: block;
+  color: #555;
+  padding: 5px 0;
+  text-decoration: none;
+}
+
+.mega-menu .column a:hover {
+  color: royalblue;
+}
+ .Product-sec  {
+        display:flex;
+        gap:3%;
+        width:1100px;
+        height:400px;
+        /* border:2px solid aqua ; */
+     }
+    .Product-sec  #newImg{
+border-radius: 10px;
+ position :relative ;
+ top:5%;
+margin-left:10%;}
+.Product-sec-text{
+  top:40%;
+ left:55%; 
+  position: absolute;
+}
+.Product-sec  h4{
+  color:dodgerblue;
+
+}
+.cart-btn{
+  background-color:dodgerblue;
+  color: white;
+  padding:0.6%;
+  border-radius:15px;
+  font-size:20px;
+}
+.select-btn{
+ background-color:dodgerblue;
+  color: white;
+  padding:0.6%;
+  border-radius:15px;
+  font-size:15px;
+}
+.Product-sec img{ 
+border:5px solid dodgerblue;
+position: absolute;
+top:197%; 
+width:400px;
+height:400px; 
+}
+.Producta{
+  display:flex;
+
+ }
+.Producta  img{
+    /* position: sticky;  */
+    top:0px;
+  width: 250px;      
+  height: 250px; 
+ margin:10px;  
+  /* object-fit: cover;
+   image-rendering: auto; */
+border:5px solid dodgerblue;
+  /* display:flex;  */
+border-radius: 30%;
+ margin-left: 5%;
+/* overflow:hidden; */
+}
+
+.Producta  img:hover{
+    transform:translatey(-15px)  ;
+      transform: scale(1.1);
+      overflow: hidden;  
+      transition:  all ease-in-out 0.5s ; 
+ } * .Producta {
+ display: flex;
+  gap: -17%;
+  position: relative;
+margin-left:5%;
+  
+  padding: -12%;
+ }
+
+  .Producta img {
+   width: 90px;
+  height: 90px;
+  /* object-fit: cover;
+  flex-shrink: 0; */
+  display:flex;
+  
+  border-radius: 8px; 
+}
+
+/* Optional scrollbar styling */
+ .Producta::-webkit-scrollbar {
+  height: 8px;
+}
+
+.Producta::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.Producta::-webkit-scrollbar-track {
+  background: #eee;
+}
+.map{
+  display:flex;
+  overflow: hidden;
+}
+.map iframe{
+  width:50%;
+  /* position:absolute; */
+  }
+.map .map-para{
+  color:dodgerblue;
+  width:50%;
+}
+.map h2{
+  color:black;
+}
+.map i{
+  font-size:25px;
+  padding:6px;
+  position:relative;
+  left:27%;
+}
+.map i:hover{
+  text-shadow: 5px 5px 8px dodgerblue;
+}
+ .bottom-2{
+  font-size: 25px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: dodgerblue;
+  position: absolute;
+
+}
+.bottom-2 img{
+  border:0px solid dodgerblue;
+ position: relative;
+  margin-left: 0px;
+}
+/* Map section */
+
+
+.sectiona {
+  font-size: 35PX;
+  margin-left:5PX;
+  margin-bottom:-27%;
+  bottom:75%;
+  position:absolute;
+color:white;
+}
+.sectiona h3{
+color:dodgerblue;
+}
+#SECTIONB {
+  font-size: 35PX;
+  margin-left: 37%;
+margin-top:-42%;
+position: relative;
+  color:white;
+}
+#SECTIONB i{
+color:rgb(245, 237, 237);
+}
+
+#SECTIONB h3{
+  color:dodgerblue;
+}
+#sectionc{
+  font-size:21PX;
+ left:65%;
+margin-top:13%;
+position:relative;
+  color:white;
+}
+
+#sectionc h2{
+  color:dodgerblue;
+}
+#sectionc input{
+  font-size: 20px;
+  border-radius:10px;
+}
+#btn6{
+  font-size: 25px;
+   background-color:rgb(251, 248, 248);
+   color:black;
+   border-radius: 10px;
+   
+}
+#last{
+  color:dodgerblue;
+margin-left:35%;
+font-size: 50px;
+}
+</style>
+</head>
+<body>
+    	<div class="navbar">
+      <img src="https://th.bing.com/th/id/OIP.2l4zlAhQWonF6-F0HQAtuwHaE8?w=240&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.7&pid=1.7&rm=3&ucfimg=1" width="100px;" height="72px;">
+		 
+		 
+		<b> <a  onclick="window.location.href='e-commerce.html';"class="active"id="nav-home">Home</a></b>
+		<HR>
+			<b> <a id="nav-about">Products</a></b>
+		<HR>
+			<b> <a id="nav-contect">Contact</a></b><HR>
+ 
+ <input class="search" placeholder="Search Products"> 
+	</div>
+ 
+  <nav>
+  <div class="logo">Categries</div>
+  <ul>
+   <li>
+    <a href="#">All Popular</a>
+    <div class="mega-menu">
+      <div class="column">
+<h3 href="#">Brands</h3>
+<a> <img src="https://th.bing.com/th/id/OIP.ErbobmHeXHUUPeR14gbHBgHaFO?w=225&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.7&pid=1.7&rm=3&ucfimg=1" width="60%;" height="60%;"></a>
+<a><img src="https://th.bing.com/th/id/OIP.EYGguRRaaEe6G_Wujd91jwHaIm?w=164&h=190&c=7&r=0&o=7&cb=ucfimg2&dpr=1.7&pid=1.7&rm=3&ucfimg=1" width="60%;" height="60%;"></a>
+<a><img src="https://th.bing.com/th/id/OIP.DyCgjzGTsGjI5ptRElPePgHaD9?w=266&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.7&pid=1.7&rm=3&ucfimg=1" width="60%;" height="60%;"></a>
+ </div>
+<div class="column">
+  <h3>Items</h3>
+ <a>Jewellery</a>
+<a>Men Fashion</a>
+<a>Kids</a>
+<a>Footwear</a>
+<a>Beauty & Personal Care</a>
+<a>Grocery</a>
+<a>Innerwear & Nightwear</a>
+<a>Bags & Luggage</a>
+ </div>
+    </div>
+   </li>
+   <!-- Mens-section -->
+    <li>
+      <a href="#">Mens</a>
+
+      <div class="mega-menu">
+
+        <div class="column">
+            <a href="#"><img src="https://th.bing.com/th/id/OIP.L4M75PK8a_P1ikr-QAGCRgHaLH?w=186&h=279&c=7&r=0&o=7&cb=ucfimg2&dpr=1.7&pid=1.7&rm=3&ucfimg=1" width="200px;"></a>
+  
+          </div>
+        <div class="column">
+          <h3>clotes</h3>
+          <a href="#">T-shirt</a>
+          <a href="#">Shirt</a>
+          <a href="#"> Jeans</a>
+          <a href="#">Lower</a>  
+          <br> 
+          <h3>Winter</h3>
+          <a href="#"> Hoodie</a>
+          <a href="#"> Sweater</a>
+          <a href="#"> Jacket</a>
+          <a href="#">shoces </a>
+        </div>
+
+ 
+        <div class="column">
+          <h3>Footwear</h3>
+          <a href="#">Shoes</a>
+          <a href="#">slipper</a>
+          <a href="#">Sandal</a>
+          <a href="#">Crocs</a>
+        </div>
+        
+   <div class="column">
+          <h3>Fasion</h3>
+          <a href="#">Kurta</a>
+            <a href="#"> Sherwani</a> 
+         <a href="#"> Nehru Jacket </a>
+          <a href="#">Dhoti Kurta </a>
+          <a href="#"> Pathani Suit </a>
+       
+        </div>
+
+
+        <!-- Womens-sec -->
+<li><a href="#">Womens</a>
+            <div class="mega-menu"> 
+        <div class="column">
+               <h3>fashion</h3>     
+     <a href="#"><img src="https://th.bing.com/th/id/OIP.w4_Xxo6kwMnTu-G1IX7IQwHaQm?w=186&h=366&c=7&r=0&o=7&cb=ucfimg2&dpr=1.7&pid=1.7&rm=3&ucfimg=1" height="300px;"></a>>
+     
+        </div> 
+            <div class="column">
+              <b></b> <h3> ACCESSORIES</h3>
+           <a href="#"> Belts</a>
+          <a href="#">Scarves  </a>
+          <a href="#">  Sunglasses</a>
+         <a href="#"> Watch </a>
+          <a href="#"> Handbag </a>
+         <a href="#">Hair Clips & Headbands </a>
+           <a href="#">  Sling Bag </a>
+        </div>     
+        <div class="column">
+               <h3> BEAUTY & CARE</h3>
+          <a href="#">Makeup Kit </a>
+          <a href="#"> Face Cream </a>
+          <a href="#"> Hair Serum  </a>
+          <a href="#"> Perfume</a>
+            <a href="#"> Nail Polish </a>
+              <a href="#"> Makeup Brushes </a>
+
+        </div>  
+           <div class="column">
+               <h3> WINTER WEAR</h3>
+         <a href="#">Muffler </a>
+          <a href="#">Gloves  </a>
+          <a href="#">Cardigans</a>
+          <a href="#">Shawl </a>
+        </div> 
+
+  </div></li>
+     <li><a href="#">Electronics</a>  
+          <div class="mega-menu"> 
+        <div class="column">
+        <a href="#"><img src="https://th.bing.com/th/id/OIP.EE_ndsO6kcX6VmcLnBW97gHaEJ?w=283&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.7&pid=1.7&rm=3&ucfimg=1" width="200px;" height="200px;"></a>
+ </div><div class="column"><h3>Gadgets</h3><a href="#">Watch</a>
+          <a href="#">Airpods</a>
+          <a href="#">L.E.D </a>
+          <a href="#">Mobile-phone</a>
+          <a href="#">Laptop</a></div>
+        </div> 
+    </li>
+      </div>
+    </li>
+  </ul>
+</nav> 
+<outside>
+<!-- <main>
+   <div class="main">
+  -->
+    <div class="Product-sec">
+    <img  id="newImg" src="https://th.bing.com/th/id/OPAC.PgSWJhDIxly5xw474C474?w=178&h=231&o=7&cb=ucfimg2&dpr=1.7&pid=1.7&rm=3&ucfimg=1 " alt="">
+     <div class=Product-sec-text> <h1 style="color:dodgerblue">Mens Fashion </h1><h3>Kutra</h3><br>
+        <h2>$25.00</h2><br>
+    <select class="select-btn">
+        <option>S-Size</option>
+        <option>M-Size</option>
+        <option>L-Size</option>     
+     </select><br>
+           <div class="Product-sec-btn">  </div>
+           <br>
+           <button class="cart-btn">Add To Cart</button> 
+           <br><br>
+           <h2>Details</h2>
+           <br>
+            <h4>Mens Fastion With Desinging Dresses .</h4>
+</div><br><br></div><br><br>
+</div>
+<div class="Producta" >
+  <img    src="https://th.bing.com/th/id/OPAC.PgSWJhDIxly5xw474C474?w=178&h=231&o=7&cb=ucfimg2&dpr=1.7&pid=1.7&rm=3&ucfimg=1" alt=""onclick="show(this)">
+ <div> 
+ </div>
+<img   src="https://i.etsystatic.com/34650355/r/il/d27948/4586242906/il_fullxfull.4586242906_ho4d.jpg " alt="" onclick="show(this)" >
+	<div  > </div> 
+	<img   src=" https://img.faballey.com/images/Product/XMS03082Z/d3.jpg" alt=""  onclick="show(this)">
+				<div > 
+			   </div>
+  	 </div><br><br><hr><br>
+   <div class="map">
+  <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7002.66222368356!2d77.287675455373!3d28.649802867526752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb5c19b33adb%3A0xf2081bd56338d441!2sJagat%20Puri%2C%20Krishna%20Nagar%2C%20Delhi%2C%20110051!5e0!3m2!1sen!2sin!4v1764337106896!5m2!1sen!2sin" width="650px" height="450" margin-left="5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+<br><br><div class="map-para"> <br><br><h2><b>Live-Location</b></h2><br><br>Fast & Transparent Delivery with Live Map Tracking
+We offer a reliable <br>and efficient delivery system designed to keep you informed at every step.<br> Once your order is confirmed, you can track your package in real time through our interactive map,<br> showing the exact location of your delivery partner.<br> This live tracking feature helps you know the estimated arrival time, ensures transparency,
+ <br>and gives you complete peace of mind. Our delivery network covers wide locations and is optimized for speed and safety, so your products reach you on time and in perfect condition. With smart route navigation and instant status updates, we make sure your shopping experience remains smooth, secure, and hassle-free from checkout to doorstep.<br> 
+ <i class="fab fa-google"style="color:black;"></i><i class="fa-brands fa-whatsapp"style="color:black;"></i> <i class="fa-brands fa-amazon-pay"style="color:black;"></i><i class="fa-brands fa-instagram"style="color:black;"></i>
+</div></div><hr>
+ 
+ <br></div>
+     </div>
+	<BR><BR></outside>
+    <br><br>
+<BR><hr><h1>Contect-US</h1>
+		<div class="bottom-2">   
+   <img src="https://th.bing.com/th/id/R.17013ddb36dc9d88ab9748fea3982e25?rik=ugMhFf7G%2fzDndw&riu=http%3a%2f%2fwww.eesolutions.co.uk%2fwp-content%2fuploads%2f2017%2f02%2fcontact-us.jpg&ehk=kG9mgx6GBrKnq0aqtXe75LjfT25X%2b37vJCVI%2bQkEysw%3d&risl=&pid=ImgRaw&r=0"width="1100px;" height="550px;">
+
+		<div id="SECTIONA">
+      <div class="sectiona">
+			<h3>Quick Link</h3>
+			<P>Home</P>
+			<P>Address</P>
+			<P>Contact</P>
+			<P>About</P>
+			<P>Shop</P>
+			<p>Review</p></div>
+			</div>
+			<br>
+			<br>
+		<div id="SECTIONB">
+			<h3>Follow Us</h3>
+			<P>   <i class="fa-brands fa-square-instagram" style="color:darkmagenta"></i>Instagram</P>
+			<P>    <i class="fa-brands fa-square-twitter" style="color:dodgerblue"></i> Twitter</P>
+			<P><i class="fa-brands fa-linkedin" style="color:cornflowerblue"></i>  Linkedin</P>
+			<p><i class="fa-brands fa-facebook" style="color:blue"></i>Facebook</p>
+			<p>   <i class="fa-brands fa-square-whatsapp" style="color:green"></i>Whatsapp</p>
+		</div><br>
+		</div> 
+		<br>
+<div id="sectionc">
+	<h2>Newsletter</h2>
+	<h4>Don't miss any offer</h4>
+    <input   placeholder="Enter your Name"><br>
+	<input   placeholder="Enter your Number "><br>
+  	<input  placeholder="Enter your E-Mail Address "><br>
+    	<input   placeholder="Enter your current-Addres "><br>
+
+
+	<button id="btn6">Subscribe</button>
+</div>
+<br><br>
+</div>
+
+<br><br><br><br><br>
+<br>
+<br>
+<hr><br>
+ 
+<h1 id="last">Creat by Piyush</h1>
+</div>
+
+ </div>
+</body>
+<script>
+ 
+ function show(img){
+  let newimg=document.getElementById("newImg");
+   newimg.src=img.src;
+ }
+</script>
+</html>
